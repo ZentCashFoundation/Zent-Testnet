@@ -88,7 +88,7 @@ jobs:
         if: matrix.build_name != 'aarch64'
         run: |
           cd build/src
-          ./cryptotest
+          ./cryptotest-testnet
       # Prepare for deploy
       - name: Prepare for Deploy
         id: before_deploy
@@ -166,7 +166,7 @@ jobs:
         if: matrix.build_name != 'aarch64'
         run: |
           cd build/src
-          ./cryptotest
+          ./cryptotest-testnet
       # Prepare for deploy
       - name: Prepare for Deploy
         id: before_deploy
@@ -253,7 +253,7 @@ jobs:
         shell: bash
         run: |
           cd build/src/Release
-          ./cryptotest.exe
+          ./cryptotest-testnet.exe
       # Prepare for deploy
       - name: Prepare for Deploy
         shell: bash
